@@ -1,0 +1,21 @@
+<div ng-init="init()"></div>
+
+<div ng-if="loading == true">
+    <label>{{statusText}}</label>
+</div>
+
+<div ng-if="List.length > 0" class="row text-center">
+    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-10"
+        ng-repeat="post in List | orderBy:'title' | limitTo: 21">
+        <div>
+            <img ng-src="{{post.images['Poster Art'].url}}" alt="Image" width="80%" loading="lazy"
+                imageonload="changeShowing(post)" />
+            <img class="hideImage" ng-hide="post.showImage == true" src="./assets/images/loading.gif" width="80%" />
+        </div>
+        <p>{{post.title}}</p>
+    </div>
+</div>
+
+<div ng-if="loading == false && List.length == 0">
+    <label>No data avaliable...</label>
+</div>

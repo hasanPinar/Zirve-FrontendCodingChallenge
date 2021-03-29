@@ -1,0 +1,159 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+  }
+
+.p-0 {
+	padding: 0 !important;
+}
+
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+
+.mb-10 {
+	margin-bottom: 10 !important;
+}
+
+.mr-1px {
+	margin-right: 1px !important;
+}
+
+.bg-black {
+	background-color: #1e1e1e;
+}
+
+.f-left {
+	float: left;
+}
+
+.custom-container {
+	margin-right: auto;
+	margin-left: auto;
+	flex: 1 0 auto;
+}
+
+@media (max-width: 575.98px) {
+	.custom-container {
+		width: 100%;
+		padding: 1rem!important;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.custom-container {
+		width: 100%;
+		padding: 1rem!important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.custom-container {
+		width: 90%;
+		padding: 1rem!important;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.custom-container {
+		width: 90%;
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 1rem!important;
+		padding-bottom: 1rem!important;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+	.custom-container {
+		width: 85%;
+		padding-left: 60px;
+		padding-right: 60px;
+		padding-top: 1rem!important;
+		padding-bottom: 1rem!important;
+	}
+}
+
+@media (min-width: 1440px) {
+	.custom-container {
+		width: 80%;
+		padding-left: 80px;
+		padding-right: 80px;
+		padding-top: 1rem!important;
+		padding-bottom: 1rem!important;
+	}
+}
+
+.footer {	
+	flex-shrink: 0;
+}
+
+.footer-link {
+	margin-top: 2rem!important;
+}
+
+.footer-link span a {
+	color: #fff !important;
+	font-size: 12px;
+	margin-left: 2px !important;
+	margin-right: 2px !important;
+}
+
+.footer-copyright {
+	margin-top: 2rem!important;
+	margin-bottom: 2rem!important;
+}
+
+.footer-copyright span {
+	color: #fff !important;
+	font-size: 16px;
+}
+
+.footer-social {
+	margin-top: 1rem!important;
+	margin-bottom: 2rem!important;
+}
+
+.footer-social a {
+	margin-right: 1rem!important;
+}
+
+.home-area {
+	display: block;
+	height: 250px;
+}
+
+.home-image {
+	position: relative;
+	padding: 80px 30px;
+	margin-right: 20px;
+	cursor: pointer;
+	background-color: #1e1e1e;
+}
+
+.home-image .image-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.home-image .image-text label {
+	cursor: pointer;
+	color: #fff !important;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.hideImage {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

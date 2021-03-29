@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Zirve App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="assets/js/Plugins/jquery-3.2.1.slim.min.js"></script>
+    <script src="assets/js/Plugins/popper.min.js"></script>
+    <script src="assets/js/Plugins/bootstrap.min.js"></script>
+    <script src="assets/js/Plugins/angular.js"></script>
+    <script src="assets/js/Plugins/ocLazyLoadRequire.js"></script>
+    <script src="assets/js/Plugins/ocLazyLoad.js"></script>
+    <script src="assets/js/Plugins/angular-ui-router.js"></script>
+    <script src="assets/js/App/config.js" type="text/javascript"></script>
+    <script src="assets/js/App/app.js" type="text/javascript"></script>
+    <script src="assets/js/App/directives.js" type="text/javascript"></script>
+</head>
+
+<body ng-app="ZirveApp" ng-controller="AppController">
+    <div ng-include="'views/Common/header.html'">
+    </div>
+    <div class="custom-container">
+        <ui-view></ui-view>
+    </div>
+    <div class="footer" ng-include="'views/Common/footer.html'">
+    </div>
+</body>
+
+</html>
